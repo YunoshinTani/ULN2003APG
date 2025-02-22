@@ -1,6 +1,7 @@
 ## 概要 (about)
 ステッピングモータードライバーIC "ULN2003APG" を制御するライブラリです。  
-GitHubのリンク [YunoshinTani/ULN2003APG](https://github.com/YunoshinTani/ULN2003APG.git).
+GitHubのリンク [YunoshinTani/ULN2003APG](https://github.com/YunoshinTani/ULN2003APG.git)  
+mbedOSでのみ動作します。開発環境はSTM32F446REです。
 
 ## 機能 (function)
 - ULN2003APG(PinName IN1, PinName IN2, PinName IN3, PinName IN4)  
@@ -15,9 +16,9 @@ GitHubのリンク [YunoshinTani/ULN2003APG](https://github.com/YunoshinTani/ULN
 ステッピングモーターを止めます。
 
 > [!TIP]
-> - 1相励磁 : 1つの電磁石のみを駆動させる制御方法。消費電力が小さいがトルクも小さい。
-> - 2相励磁 : 2つの電磁石を同時に駆動させる制御方法。トルクが1相励磁と比べて√2倍になるが、消費電力と発熱が増える。
-> - 1-2相励磁 : 1相励磁と2相励磁を交互に行う制御方法。分解能が倍(パルス毎に動く角は半分)になるが、トルクが脈動してしまう。
+> - **1相励磁** : 1つの電磁石のみを駆動させる制御方法。消費電力が小さいがトルクも小さい。
+> - **2相励磁** : 2つの電磁石を同時に駆動させる制御方法。トルクが1相励磁と比べて√2倍になるが、消費電力と発熱が増える。
+> - **1-2相励磁** : 1相励磁と2相励磁を交互に行う制御方法。分解能が倍(パルス毎に動く角は半分)になるが、トルクが脈動してしまう。
 
 ## コード例 (example)
 ```cpp
