@@ -4,15 +4,15 @@ GitHubのリンク [YunoshinTani/ULN2003APG](https://github.com/YunoshinTani/ULN
 mbedOSでのみ動作します。開発環境はSTM32F446REです。
 
 ## 機能 (function)
-- ULN2003APG(PinName IN1, PinName IN2, PinName IN3, PinName IN4)  
+- **ULN2003APG(PinName IN1, PinName IN2, PinName IN3, PinName IN4)**  
 コンストラクタです。ULN2003APGのIN1~IN4を引数として渡してください。
-- void one_phase(int pulse_frequency)  
+- **void one_phase(int pulse_frequency)**  
 1相励磁させます。パルスを送る周波数を引数として渡してください。
-- void two_phase(int pulse_frequency)  
+- **void two_phase(int pulse_frequency)**  
 2相励磁させます。パルスを送る周波数を引数として渡してください。
-- void half_step(int pulse_frequency)  
+- **void half_step(int pulse_frequency)**  
 1-2相励磁させます。パルスを送る周波数を引数として渡してください。
-- void stop()  
+- **void stop()**  
 ステッピングモーターを止めます。
 
 > [!TIP]
