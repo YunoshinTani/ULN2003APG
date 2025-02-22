@@ -4,10 +4,10 @@
 // public
 ULN2003APG::ULN2003APG(PinName IN1, PinName IN2, PinName IN3, PinName IN4) : _IN1(IN1), _IN2(IN2), _IN3(IN3), _IN4(IN4)
 {
-    step_stop();
+    stop();
 }
 
-void ULN2003APG::step_stop()
+void ULN2003APG::stop()
 {
     _IN1 = 0;
     _IN2 = 0;

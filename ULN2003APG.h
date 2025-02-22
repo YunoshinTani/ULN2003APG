@@ -18,7 +18,7 @@ public:
     /**
      * @brief ステッピングモーターを停止します。
      */
-    void step_stop();
+    void stop();
 
     /**
      * @brief 1相励磁します。
